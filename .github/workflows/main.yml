@@ -12,7 +12,7 @@ jobs:
         
       - name: Eu sunt seful tau
         id: seful
-        uses: CostinManolescu/Docker_action@v1
+        uses: CostinManolescu/Docker_action@v2
         
       - name: Get the message
         run: echo "The message is ${{ steps.seful.outputs.message }}"
