@@ -1,0 +1,12 @@
+on: [push]
+
+jobs: 
+  eu_sunt_seful_tau_job:
+    runs-on: ubuntu-latest
+    name: Seful_job
+    steps:
+      -name: Eu sunt seful tau
+      id: seful
+      uses: actions/Docker_action_1@v2
+      -name: Get the message
+      run: echo "$({ steps.seful.outputs.message })
