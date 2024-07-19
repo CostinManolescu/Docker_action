@@ -12,7 +12,7 @@ jobs:
         
       - name: Eu sunt seful tau
         id: seful
-        uses: actions/mesaj_seful@v2
+        uses: actions/mesaj_seful@v1
         
       - name: Get the message
         run: echo "The message is ${{ steps.seful.outputs.message }}"
