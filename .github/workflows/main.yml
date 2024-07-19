@@ -10,10 +10,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         
-      - name: Eu sunt seful tau
+      - name: Run Docker Action
         id: seful
-        uses: CostinManolescu/Docker_action@main
+        uses: CostinManolescu/Docker_action@main  # Ensure the tag/branch is correct
         
       - name: Get the message
         run: echo "The message is ${{ steps.seful.outputs.message }}"
+
 

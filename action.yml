@@ -4,7 +4,7 @@ description: 'Print the message.'
 outputs:
   message:
     description: 'This is the message'
-    value: 'Eu sunt seful tau.'
+    value: ${{ steps.entrypoint.outputs.message }}
 
 runs:
   using: 'docker'

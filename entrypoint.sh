@@ -1,4 +1,8 @@
 #!/bin/sh -l
 
-message=$(text)
+# Define the message
+message="Eu sunt seful tau"
+
+# Set the output
 echo "message=$message" >> $GITHUB_OUTPUT
+
