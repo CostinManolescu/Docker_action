@@ -1,4 +1,4 @@
-name: 'Eu sunt seful tau.'
+name: 'mesaj_seful'
 description: 'Print the message.'
 outputs:
   message: 'Eu sunt seful tau.'
