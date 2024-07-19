@@ -1,8 +1,12 @@
 name: 'mesaj_seful'
 description: 'Print the message.'
+
 outputs:
-  message: 'Eu sunt seful tau.'
-   description: 'This is the message'
+  message:
+    description: 'This is the message'
+    value: 'Eu sunt seful tau.'
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
+
