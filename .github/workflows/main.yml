@@ -15,6 +15,6 @@ jobs:
         uses: CostinManolescu/Docker_action@main  # Ensure the tag/branch is correct
         
       - name: Get the message
-        run: echo "The message is ${{ steps.seful.outputs.message }}"
+        run: echo "${{ steps.seful.outputs.message }}"
 
 
