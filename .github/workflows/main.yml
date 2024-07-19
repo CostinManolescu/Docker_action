@@ -9,4 +9,4 @@ jobs:
       id: seful
       uses: actions/Docker_action_1@v2
       -name: Get the message
-      run: echo "$({ steps.seful.outputs.message })
+      run: echo "$({ steps.seful.outputs.message })"
