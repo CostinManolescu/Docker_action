@@ -7,6 +7,6 @@ jobs:
     steps:
       -name: Eu sunt seful tau
       id: seful
-      uses: actions/Docker_action_1@v2
+      uses: actions/Docker_action@v2
       -name: Get the message
       run: echo "$({ steps.seful.outputs.message })"
