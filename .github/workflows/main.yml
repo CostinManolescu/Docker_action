@@ -7,6 +7,6 @@ jobs:
     steps:
       -name: Eu sunt seful tau
       id: seful
-      uses: actions/Eu sunt seful tau@v2
+      uses: actions/mesaj_seful@v2
       -name: Get the message
       run: echo "$({ steps.seful.outputs.message })"
