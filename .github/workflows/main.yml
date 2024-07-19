@@ -1,12 +1,19 @@
+name: A workflow to test public action
+
 on: [push]
 
-jobs: 
+jobs:
   eu_sunt_seful_tau_job:
     runs-on: ubuntu-latest
     name: Seful_job
     steps:
-      -name: Eu sunt seful tau
-      id: seful
-      uses: actions/mesaj_seful@v2
-      -name: Get the message
-      run: echo "$({ steps.seful.outputs.message })"
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Eu sunt seful tau
+        id: seful
+        uses: actions/mesaj_seful@v2
+        
+      - name: Get the message
+        run: echo "The message is ${{ steps.seful.outputs.message }}"
+
